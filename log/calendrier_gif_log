@@ -1503,3 +1503,23 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2022-07-07 12:20:18.861  INFO 19048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8280 (http) with context path ''
 2022-07-07 12:20:18.867  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : Started ProjetavisApplication in 0.758 seconds (JVM running for 1439.817)
 2022-07-07 12:20:18.872  INFO 19048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-07 12:22:13.820  INFO 19048 --- [Thread-94] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-07 12:22:14.022  WARN 19048 --- [Thread-94] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-07-07 12:22:14.022  INFO 19048 --- [Thread-94] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2022-07-07 12:22:14.023  INFO 19048 --- [Thread-94] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2022-07-07 12:22:14.166  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : Starting ProjetavisApplication using Java 17.0.2 on DESKTOP-ILEGKOI with PID 19048 (C:\Users\Msnju\eclipse-workspace\projetavis\target\classes started by Msnju in C:\Users\Msnju\eclipse-workspace\projetavis)
+2022-07-07 12:22:14.167  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 12:22:14.339  INFO 19048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-07 12:22:14.361  INFO 19048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 10 JPA repository interfaces.
+2022-07-07 12:22:14.420  INFO 19048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8280 (http)
+2022-07-07 12:22:14.420  INFO 19048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 12:22:14.420  INFO 19048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-07 12:22:14.436  INFO 19048 --- [restartedMain] o.a.c.c.C.[Tomcat-12].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2022-07-07 12:22:14.436  INFO 19048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2022-07-07 12:22:14.456  INFO 19048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2022-07-07 12:22:14.458  INFO 19048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2022-07-07 12:22:14.458  INFO 19048 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:projetavis'
+2022-07-07 12:22:14.490  INFO 19048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-07 12:22:14.493  INFO 19048 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-07 12:22:14.541  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Plateforme (class must be instantiated by Interceptor)

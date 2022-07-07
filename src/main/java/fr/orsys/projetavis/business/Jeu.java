@@ -48,7 +48,11 @@ public class Jeu {
 	@ManyToOne
 	@NotNull(message="veuillez choisir un éditeur")
 	private Editeur editeur;
+<<<<<<< HEAD
 	@ManyToMany(mappedBy="jeux")
+=======
+	@ManyToMany(mappedBy = "jeux")
+>>>>>>> 1cf29a30520f844588428db84e1ca653a7ae7873
 	@NotNull(message="veuillez choisir une plateforme")
 	private List<Plateforme> plateformes;
 	@ManyToOne
