@@ -10,11 +10,13 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @Entity
 @RequiredArgsConstructor
+@NoArgsConstructor
 @Data
 public abstract class Utilisateur {
 	@Id
