@@ -1523,3 +1523,53 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2022-07-07 12:22:14.490  INFO 19048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
 2022-07-07 12:22:14.493  INFO 19048 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 2022-07-07 12:22:14.541  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Plateforme (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.556  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Avis (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.567  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Editeur (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.576  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Classification (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.585  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Jeu (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.599  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Joueur (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.604  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.ModeleEconomique (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.607  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Genre (class must be instantiated by Interceptor)
+2022-07-07 12:22:14.640  INFO 19048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-07 12:22:14.640  INFO 19048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-07 12:22:14.661  WARN 19048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-07 12:22:15.059  WARN 19048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-07 12:22:15.066  INFO 19048 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path ''
+2022-07-07 12:22:15.080  INFO 19048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8280 (http) with context path ''
+2022-07-07 12:22:15.092  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : Started ProjetavisApplication in 0.958 seconds (JVM running for 1556.043)
+2022-07-07 12:22:15.094  INFO 19048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-07 12:22:50.927  INFO 19048 --- [Thread-98] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-07 12:22:51.130  WARN 19048 --- [Thread-98] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-07-07 12:22:51.132  INFO 19048 --- [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2022-07-07 12:22:51.134  INFO 19048 --- [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2022-07-07 12:22:51.273  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : Starting ProjetavisApplication using Java 17.0.2 on DESKTOP-ILEGKOI with PID 19048 (C:\Users\Msnju\eclipse-workspace\projetavis\target\classes started by Msnju in C:\Users\Msnju\eclipse-workspace\projetavis)
+2022-07-07 12:22:51.273  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 12:22:51.514  INFO 19048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-07 12:22:51.531  INFO 19048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2022-07-07 12:22:51.600  INFO 19048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8280 (http)
+2022-07-07 12:22:51.601  INFO 19048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 12:22:51.601  INFO 19048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-07 12:22:51.622  INFO 19048 --- [restartedMain] o.a.c.c.C.[Tomcat-12].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2022-07-07 12:22:51.622  INFO 19048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 347 ms
+2022-07-07 12:22:51.643  INFO 19048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2022-07-07 12:22:51.648  INFO 19048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2022-07-07 12:22:51.649  INFO 19048 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:projetavis'
+2022-07-07 12:22:51.681  INFO 19048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-07 12:22:51.686  INFO 19048 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-07 12:22:51.755  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Plateforme (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.775  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Avis (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.781  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Editeur (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.787  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Classification (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.792  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Jeu (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.797  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Joueur (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.801  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.ModeleEconomique (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.805  INFO 19048 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: fr.orsys.projetavis.business.Genre (class must be instantiated by Interceptor)
+2022-07-07 12:22:51.844  INFO 19048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-07 12:22:51.844  INFO 19048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-07 12:22:51.883  WARN 19048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-07 12:22:52.142  WARN 19048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-07 12:22:52.145  INFO 19048 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path ''
+2022-07-07 12:22:52.161  INFO 19048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8280 (http) with context path ''
+2022-07-07 12:22:52.167  INFO 19048 --- [restartedMain] f.o.projetavis.ProjetavisApplication     : Started ProjetavisApplication in 0.919 seconds (JVM running for 1593.118)
+2022-07-07 12:22:52.170  INFO 19048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
